@@ -1,3 +1,12 @@
+---
+lab:
+    title: '6-clean-up-resources'
+    description: 'clean-up-resources'
+    duration: '00 minutes'
+    level: 100 <!-- 100 basic concepts, 200 foundations, 300 practical usage, 400 advanced scenarios, 500 expert design -->
+    islab: true <!-- if not a lab, remove -->
+---
+
 Complete these steps to avoid ongoing charges from the resources you created in this project.
 
 > [!WARNING]
