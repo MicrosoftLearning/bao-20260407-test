@@ -40,12 +40,32 @@ If a more complex setup is required, create a separate markdown file with setup 
 -->
 
 
-{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Level</th>
+      <th>Duration</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for activity in labs %}
+    {% if activity.lab.title %}
+    <tr>
+      <td>
+        <a href="{{ site.github.url }}{{ activity.url }}">
+          {{ activity.lab.title }}
+        </a>
+      </td>
+      <td>{{ activity.lab.level }}</td>
+      <td>{{ activity.lab.duration }}</td>
+      <td>{{ activity.lab.description }}</td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
 
-| Title | Level | Duration | Description |
-| --- | --- | --- | --- |
-{% for activity in labs %}
-| [{{ activity.lab.title }}]({{ site.github.url }}{{ activity.url }}) | {{ activity.lab.level | default: "—" }} | {{ activity.lab.duration | default: "—" }} | {{ activity.lab.description | default: "" }} |
-{% endfor %}
 
 
