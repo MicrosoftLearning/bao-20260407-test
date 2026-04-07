@@ -1,3 +1,12 @@
+---
+lab:
+    title: '3-exercise-upload-verify-content'
+    description: 'exercise-upload-verify-content'
+    duration: '00 minutes'
+    level: 100 <!-- 100 basic concepts, 200 foundations, 300 practical usage, 400 advanced scenarios, 500 expert design -->
+    islab: true <!-- if not a lab, remove -->
+---
+
 This guided project consists of the following exercises:
 
  - Create storage account and enable hosting
