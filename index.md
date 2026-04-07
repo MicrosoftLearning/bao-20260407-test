@@ -45,11 +45,7 @@ If a more complex setup is required, create a separate markdown file with setup 
 | --- | --- | --- | --- |
 {% for activity in labs %}
 {% if activity.lab.title %}
-| [{{ activity.lab.title }}]({{ site.github.url }}{{ activity.url }})
-| {{ activity.lab.level | default: "—" }}
-| {{ activity.lab.duration | default: "—" }}
-| {{ activity.lab.description | default: "" }} |
-
+| [{{ activity.lab.title }}]({{ site.github.url }}{{ activity.url }}) | {{ activity.lab.level }} | {{ activity.lab.duration }} | {{ activity.lab.description }} |
 {% endif %}
 {% endfor %}
 
