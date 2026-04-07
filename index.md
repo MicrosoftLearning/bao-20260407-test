@@ -44,8 +44,7 @@ If a more complex setup is required, create a separate markdown file with setup 
 
 | Title | Level | Duration | Description |
 | --- | --- | --- | --- |
-{% for activity in labs %}
-|[{{ activity.lab.title }}]({{ site.github.url }}{{ activity.url }}) | {{ activity.lab.level }} | {{ activity.lab.duration }} | {{ activity.lab.description }} |
+{% for activity in labs %}|[{{ activity.lab.title }}]({{ site.github.url }}{{ activity.url }}) | {{ activity.lab.level }} | {{ activity.lab.duration }} | {{ activity.lab.description }}|
 {% endif %}
 {% endfor %}
 
