@@ -22,7 +22,7 @@ If a more complex setup is required, create a separate markdown file with setup 
 -->
 
 <hr>
-<!--
+
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
 {% for activity in labs  %}
 {% if activity.lab.title %}
@@ -37,8 +37,8 @@ If a more complex setup is required, create a separate markdown file with setup 
 <hr>
 {% endif %}
 {% endfor %} 
--->
 
+---
 
 <table>
   <thead>
