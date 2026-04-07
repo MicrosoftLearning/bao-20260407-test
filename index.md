@@ -37,35 +37,3 @@ If a more complex setup is required, create a separate markdown file with setup 
 <hr>
 {% endif %}
 {% endfor %} 
-
----
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Level</th>
-      <th>Duration</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for activity in labs %}
-    {% if activity.lab.title %}
-    <tr>
-      <td>
-        <a href="{{ site.github.url }}{{ activity.url }}">
-          {{ activity.lab.title }}
-        </a>
-      </td>
-      <td>{{ activity.lab.level }}</td>
-      <td>{{ activity.lab.duration }}</td>
-      <td>{{ activity.lab.description }}</td>
-    </tr>
-    {% endif %}
-    {% endfor %}
-  </tbody>
-</table>
-
-
-
